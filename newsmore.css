@@ -1,0 +1,157 @@
+*{
+  margin:0;
+  padding: 0;
+  border:0;
+  font
+}
+body{
+  background-color: black;
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+  margin:0;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+header{
+  background-color: #000000;
+  width: 100%;
+  height:100px;
+}
+#header-inner{
+  max-width: 1200px;
+  margin:0 auto;
+}
+
+#logo{
+  margin: 20px;
+  float: left;
+  width: 200px;
+  height:100px;
+  background: url(img/alliance_logo.png) no-repeat center;
+}
+nav{
+  float: right;
+  padding: 40px 20px 0 0;
+}
+
+#menu-icon{
+  display: hidden;
+  width: 40px;
+  height: 40px;
+  background: url(img/nav.png) center;
+}
+a:hover#menu-icon{
+  border-radius: 4px 4px 0 0;
+}
+
+ul {
+  list-style-type: none;
+}
+nav ul li{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 120%;
+  display: inline-block;
+  float: left;
+  padding: 10px;
+}
+nav ul li a{
+  color: #FFF;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  /* ...and now for the proper property */
+  transition:.5s;
+}
+nav ul li a:hover{
+  color: #AF2626;
+}
+.current{
+  color: #AF2626;
+}
+a{
+  text-decoration: none;
+}
+.button3 {
+    background-color: white;
+    color: black;
+    padding: 2%;
+    border: 2px solid #f44336;
+    border-radius: 8%;
+}
+
+.button3:hover {
+    background-color: #f44336;
+    color: white;
+}
+h1{
+  position: relative;
+  color: #C52A2A;
+  /* text-align: left; */
+  padding: 5%;
+  font-size:80%;
+  font-family: "Montserrat", sans-serif;
+}
+h2, h3{
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+p{
+  text-indent: 2.5em;
+  text-align: justify;
+  padding-top: 2%;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: 100%;
+  grip-gap: 2em;
+  margin: 10% 5%;
+}
+.wrapper > div{
+  background: white;
+  color:black;
+  font-family: "Montserrat", sans-serif;
+  padding: 5%;
+}
+
+@media screen and (max-width: 760px) {
+  h1{
+    font-size: 150%;
+  }
+  h3{
+    font-size: 125%;
+  }
+  p{
+    font-size: 120%;
+  }
+  header{
+    position: absolute;
+  }
+  #logo{
+    margin: 15px 0 20px -25px;
+    background: url(img/alliance_logo mobile.png) no-repeat center;
+  }
+  #menu-icon{
+    display: inline-block;
+  }
+  nav ul, nav:active ul{
+    display: none;
+    z-index: 1000;
+    position: absolute;
+    padding: 20px;
+    background: #393838;
+    right: 20px;
+    top: 16px;
+    border: 1px solid #FFF;
+    border-radius: 2px 0 2px 2px;
+  }
+  nav:hover ul{
+    display: block;
+  }
